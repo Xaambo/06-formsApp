@@ -13,6 +13,12 @@ const rtx5090 = {
   styles: [],
 })
 export class BasicPageComponent implements OnInit {
+  // public myForm: FormGroup = new FormGroup({
+  //   name: new FormControl('', []),
+  //   price: new FormControl(0),
+  //   inStorage: new FormControl(0),
+  // });
+
   public myForm: FormGroup = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
     price: [0, [Validators.required, Validators.min(0)]],

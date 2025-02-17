@@ -7,8 +7,8 @@ interface MenuItem {
 
 @Component({
   selector: 'shared-side-menu',
-  standalone: false,
   templateUrl: './side-menu.component.html',
+  standalone: false,
   styles: [],
 })
 export class SideMenuComponent {

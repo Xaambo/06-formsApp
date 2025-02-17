@@ -12,6 +12,10 @@ import {
   standalone: false,
 })
 export class DynamicPageComponent {
+  // public myForm2 = new FormGroup({
+  //   favoriteGames: new FormArray([])
+  // });
+
   public myForm: FormGroup = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(3)]],
     favoriteGames: this.fb.array([
